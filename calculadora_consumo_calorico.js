@@ -11,8 +11,8 @@
 // Actividad moderada (hace actividad físisca 3 a 5 veces por semana): 1.55
 // Actividad intensa (hace actividad física 6 a 7 veces por semana): 1.725
 // Actividad extremadamente alta (atletas profesionales mucha actividad física): 1.9
-function objetivo (){    
-    prompt("¿Cual es tu objetivo?:\n\n - Bajar peso; \n - Subir peso:");}
+// function objetivo (){    
+//     prompt("¿Cual es tu objetivo?:\n\n - Bajar peso; \n - Subir peso:");}
 
 alert("Bienvenido, hoy vamos a calcular tu consumo calórico diario")
 
@@ -42,25 +42,25 @@ if (sexo == "Hombre" || sexo == "Mujer"){
     switch (sexo){
         case "Hombre":
         alert("Su metabolismo basal es de " + formula_hombres + " calorías.");
-        let objetivo1 = prompt("¿Cuál es su objetivo?:\n - Quemar grasa \n - Ganar músculo ");
+        let objetivo = prompt("¿Cuál es su objetivo? (Escriba en número de opción):\n 1 - Quemar grasa \n 2 - Ganar músculo ");
 
-        if (objetivo1 == "Bajar peso"){
-        let resultado1 = formula_hombres - 500;
-        alert("Usted tiene que realizar una dieta basada en " + resultado1 + " calorías."); 
-        }else if (objetivo1 == "Ganar Músculo" || objetivo1 == "Ganar musculo"){
-        let resultado2 = formula_hombres + 500;
-        alert("Usted tiene que realizar una dieta basada en " + resultado2 + " calorías.")}
+        if (objetivo == "1"){
+        let resultado = formula_hombres - 500;
+        alert("Usted tiene que realizar una dieta basada en " + resultado + " calorías."); 
+        }else if (objetivo == "2"){
+        let resultado = formula_hombres + 500;
+        alert("Usted tieneque realizar una dieta basada en " + resultado + " calorías.")}
 
         break;
         case "Mujer":
         alert("Su metabolismo basal es de " + formula_mujeres + " calorías.");
-        let objetivo2 = prompt("¿Cuál es su objetivo?:\n - Quemar grasa \n - Ganar músculo ");
-        if(objetivo2 == "Quemar grasa"){
-        let resultado3 = formula_mujeres - 500;
-        alert("Usted tiene que realizar una dieta basada en " + resultado3 + " calorías."); 
-        }else if (objetivo2 == "Ganar músculo" || objetivo == "Ganar musculo"){
-        let resultado24 = formula_mujeres + 500;
-        alert("Usted tiene que realizar una dieta basada en " + resultado4 + " calorías.");}
+        let objetivo1 = prompt("¿Cuál es su objetivo?:(Escriba en número de opción):\n 1 - Quemar grasa \n 2 - Ganar músculo ");
+        if(objetivo1 == "1"){
+        let resultado = formula_mujeres - 500;
+        alert("Usted tiene que realizar una dieta basada en " + resultado + " calorías."); 
+        }else if (objetivo1 == "2"){
+        let resultado = formula_mujeres + 500;
+        alert("Usted tiene que realizar una dieta basada en " + resultado + " calorías.");}
         break;
         default:
         alert("El dato ingresado es erroneo");
