@@ -11,8 +11,10 @@
 // Actividad moderada (hace actividad físisca 3 a 5 veces por semana): 1.55
 // Actividad intensa (hace actividad física 6 a 7 veces por semana): 1.725
 // Actividad extremadamente alta (atletas profesionales mucha actividad física): 1.9
-// function objetivo (){    
-//     prompt("¿Cual es tu objetivo?:\n\n - Bajar peso; \n - Subir peso:");}
+
+// 1. Divir el flujo de datos según sexo
+// 2. Preguntar las otros datos necesario de la Formula de Harris-Benedict
+// 3. Una vez conseguido el metabolismo basal, preguntaremos el objetivo que buscan la persona
 
 alert("Bienvenido, hoy vamos a calcular tu consumo calórico diario")
 
@@ -29,6 +31,7 @@ if (sexo == "Hombre" || sexo == "Mujer"){
     let altura = parseInt(prompt("Escribe tu altura en cm"));
     let edad = parseInt(prompt("Escribe tu edad"));
     let factor_actividad = parseInt(prompt("Escriba su factor de actividad: \n\n - Personas sedentarias (hace poca actividad física): 1.2\n - Actividad ligera (hace actividad físisca 1 a 3 veces por semana) = 1.375\n - Actividad moderada  (hace actividad físisca 3 a 5 veces por semana) = 1.55\n - Actividad intensa  (hace actividad física 6 a 7 veces por semana) = 1.725\n - Actividad extremadamente alta (atletas profesionales mucha actividad física) = 1.9"));
+    
     // FORMULA HOMBRES
     const formula_hombres = ((66 + 13.7 * peso) + (5 * altura - 6.8 * edad)) * factor_actividad;
     
@@ -69,30 +72,7 @@ if (sexo == "Hombre" || sexo == "Mujer"){
 
 alert("Gracias por utilizar nuesrta calculadora de calorías")
 
-// let calorias = 500
 
-// let objetivo = prompt("¿Cual es tu objetivo?:\n\n - Bajar peso; \n - Subir peso:");
-
-// if (objetivo = "Bajar peso"){
-//     resutlado = formula_hombres - calorias;
-//     alert("Usted tiene que realizar una dieta basada en " + resultado + " calorías.");
-// }else if (objetivo = "Subir peso"){
-//     resultado2 = formula_hombres + calorias;
-//     alert("Usted tiene que realizar una dieta basada en " + resultado + " calorías.")
-// }else {
-//     alert("Ingreso mal un dato");
-// }
-
-
-
-
-// if(sexo != "Hombre"){
-// alert("Valor incorrecto, vuelva a escribir");
-// } else if (sexo == "Hombre"){
-//     alert("Su metabolismo basal es " + formula_hombres);
-// }else if (Sexo == "Mujer") {
-//     alert("Su metabolismo basal es " + formula_mujeres);
-// }
 
 
 
