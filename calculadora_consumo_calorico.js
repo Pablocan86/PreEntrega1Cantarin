@@ -15,6 +15,7 @@
 // 1. Divir el flujo de datos según sexo
 // 2. Preguntar las otros datos necesario de la Formula de Harris-Benedict
 // 3. Una vez conseguido el metabolismo basal, preguntaremos el objetivo que buscan la persona
+
 function calculadora() {
   alert("Bienvenido, hoy vamos a calcular tu consumo calórico diario");
 
@@ -111,5 +112,3 @@ function calculadora() {
 
   alert("Gracias por utilizar nuesrta calculadora de calorías");
 }
-
-calculadora();
