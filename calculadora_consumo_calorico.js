@@ -55,7 +55,7 @@ function calculadora() {
   switch (sexo) {
     case "Hombre":
       alert(
-        "Su metabolismo basal es de " +
+        "Su consumo calórico diario es de " +
           hombre(peso, altura, edad, factor_actividad) +
           " calorías."
       );
@@ -68,21 +68,21 @@ function calculadora() {
         alert(
           "Usted tiene que realizar una dieta basada en " +
             resultado +
-            " calorías."
+            " calorías diarias."
         );
       } else if (objetivo == "2") {
         let resultado = hombre(peso, altura, edad, factor_actividad) + 500;
         alert(
           "Usted tieneque realizar una dieta basada en " +
             resultado +
-            " calorías."
+            " calorías diarias."
         );
       }
 
       break;
     case "Mujer":
       alert(
-        "Su metabolismo basal es de " +
+        "Su consumo calórico diario es de " +
           mujer(peso, altura, edad, factor_actividad) +
           " calorías."
       );
@@ -94,14 +94,14 @@ function calculadora() {
         alert(
           "Usted tiene que realizar una dieta basada en " +
             resultado +
-            " calorías."
+            " calorías diarias."
         );
       } else if (objetivo1 == "2") {
         let resultado = mujer(peso, altura, edad, factor_actividad) + 500;
         alert(
           "Usted tiene que realizar una dieta basada en " +
             resultado +
-            " calorías."
+            " calorías diarias."
         );
       }
       break;
